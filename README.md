@@ -1,4 +1,4 @@
-# Meeple Kingdom 🎲
+# Meeple Kingdom
 
 Aplicación Android nativa para la compra, venta, intercambio y subasta de juegos de mesa. Este proyecto corresponde al desarrollo del **Frontend (Actividad 3)**, implementando navegación por roles, layouts personalizados y recursos centralizados.
 
