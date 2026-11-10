@@ -20,7 +20,7 @@
             android:textSize="26sp"
             android:textStyle="bold" />
 
-        <!-- Banner de Subastas (Requisito nuevo) -->
+        <!-- Banner de Subastas  -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="120dp"
@@ -50,7 +50,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Sección: Tiendas Cercanas -->
+        <!--  Tiendas Cercanas -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -115,6 +115,7 @@
 
         <!-- Producto 1 -->
         <LinearLayout
+            android:id="@+id/cardCatan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"

@@ -8,12 +8,21 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/btnAtras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Administración"
-        style="@style/TitleText" />
+        android:text="← Cerrar Sesión"
+        android:textColor="@color/indigo_primary"
+        android:textStyle="bold"
+        android:paddingBottom="16dp" />
 
-    <!-- Tarjetas de resumen -->
+    <TextView
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Administración" />
+
+    <!-- Métricas -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -41,27 +50,37 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        style="@style/SubtitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Acciones Rápidas"
-        android:textColor="@color/indigo_primary"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:text="Acciones Rápidas" />
 
     <Button
+        android:id="@+id/btnGestionUsuarios"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/teal_confirm"
-        android:text="Gestionar Usuarios"
+        android:text="Gestión de Usuarios"
         android:textAllCaps="false" />
 
     <Button
+        android:id="@+id/btnReporteVentas"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/orange_cta"
-        android:text="Moderar Productos (5 pendientes)"
+        android:text="Reporte de Ventas"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnModerarProductos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/indigo_primary"
+        android:text="Moderar Productos"
+        android:textAllCaps="false" />
+
 </LinearLayout>

@@ -13,9 +13,9 @@
         android:theme="@style/Theme.MeepleKingdom"
         tools:targetApi="31">
 
-        <!-- Pantalla de Login -->
+        <!-- pantalla de inicio -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +23,22 @@
             </intent-filter>
         </activity>
 
-        <!-- Otras pantallas -->
+        <!-- El Login ya no tiene el intent-filter de inicio -->
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".ProductDetailActivity" />
+        <activity android:name=".PaymentActivity" />
         <activity android:name=".SellerActivity" />
+        <activity android:name=".SellerProductsActivity" />
+        <activity android:name=".AddProductActivity" />
         <activity android:name=".AdminActivity" />
+        <activity android:name=".AdminUsersActivity" />
+        <activity android:name=".AdminSalesActivity" />
+        <activity android:name=".RecoveryActivity" />
+        <activity android:name=".SellerOrdersActivity" />
+        <activity android:name=".SellerProfileActivity" />
+        <activity android:name=".AdminProductsActivity" />
+        <activity android:name=".AddUserActivity" />
 
     </application>
 </manifest>

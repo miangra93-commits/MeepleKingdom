@@ -1,5 +1,6 @@
 package com.example.meeplekingdom
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +12,15 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Aquí le decimos que use el diseño que crearemos a continuación
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        // Buscamos la tarjeta de Catan y le decimos que abra el detalle
+        val cardCatan = view.findViewById<View>(R.id.cardCatan)
+        cardCatan.setOnClickListener {
+            val intent = Intent(activity, ProductDetailActivity::class.java)
+            startActivity(intent)
+        }
+
+        return view
     }
 }
