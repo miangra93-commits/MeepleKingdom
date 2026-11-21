@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imgCatalogo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#EEEEEE"
+        android:contentDescription="@string/item_producto_foto_del_producto"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvCatalogoNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/indigo_primary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCatalogoPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange_cta"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCatalogoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text"
+        android:textSize="12sp" />
+</LinearLayout>

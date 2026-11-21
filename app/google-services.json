@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "518058206129",
+    "project_id": "meeplekingdome",
+    "storage_bucket": "meeplekingdome.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518058206129:android:ad4e7cb5d7217e8b83d390",
+        "android_client_info": {
+          "package_name": "com.example.meeplekingdom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi0idxKNz6_VYY621sC0zO2D4oa3t_DyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

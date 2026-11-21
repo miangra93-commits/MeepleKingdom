@@ -1,0 +1,22 @@
+rules_version = '2';
+// Reglas de seguridad de Firebase Storage - Meeple Kingdom
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function role() {
+      return firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.rol;
+    }
+    function canWrite() {
+      return request.auth != null && role() in ['vendedor', 'admin'];
+    }
+
+    // Fotos de productos: lectura para usuarios autenticados, escritura para vendedor/admin (máx. 3 MB, solo imágenes)
+    match /products/{file} {
+      allow read: if request.auth != null;
+      allow create, update: if canWrite()
+          && request.resource.size < 3 * 1024 * 1024
+          && request.resource.contentType.matches('image/.*');
+      allow delete: if canWrite();
+    }
+  }
+}
